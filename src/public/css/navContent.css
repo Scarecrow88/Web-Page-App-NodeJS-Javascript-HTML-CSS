@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI Light';
+    background-color: #8c8cef;
+}
+.navheader {
+    height: 80px;
+    background-color: #c7750a;
+    box-shadow: 0 3px 18px black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.navbox {
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1292px;
+}
+.navlogo, .navmenuitem a {
+    color: #fffbea;
+    text-decoration: none;
+}
+.navlogo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+.navmenu {
+    margin-right: 40px;
+    display: flex;
+    list-style: none;
+}
+.navmenuitem {
+    width: max-content;
+    margin: 0 10px;
+    font-size: 18px;
+    line-height: 80px;
+}
+.navmenuitem a {
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+.navmenuitem a:hover {
+    background-color: #a93a00;
+    transition: 0.5s;
+}
+.navtoggle {
+    height: 60px;
+    padding: 10px 20px;
+    line-height: 60px;
+    background: none;
+    border: none;
+    display: none;
+    cursor: pointer;
+}
+.navtoggle svg {
+    width: 30px;
+    height: 30px;
+}
+.imagebox {
+    margin-top: 90px;
+    text-align: center;
+}
+.imagebox img {
+    width: 35%;
+    height: 35%;
+}
+.aboutbox {
+    background-color: #c7750a;
+    color: #fffbea;
+    margin: 150px 270px;
+    padding: 50px;
+}
+.aboutbox h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+path {
+    fill: #f4bd52 !important;
+}
+@media screen and (max-width: 1070px) {
+    .aboutbox {
+        margin: 100px 180px;
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 768px) {
+    main {
+        padding: 70px;
+    }
+    .navheader {
+        height: 60px;
+    }
+    .navlogo {
+        height: 60px;
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+    .navmenu {
+        width: 100%;
+        padding: 20px 0;
+        align-items: center;
+        margin-right: 20px;
+        flex-direction: column;
+        background-color: #a93a00;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .navmenuitem {
+        height: 60px;
+        line-height: 60px;
+    }
+    .navmenuitem a:hover {
+        background: none;
+        color: #c7750a;
+    }
+    .navtoggle {
+        display: block;
+    }
+    .navmenuvisible {
+        left: 0;
+    }
+    .navtoggle:focus:not(:focus-visible) {
+        outline: none;
+    }
+    .imagebox {
+        margin-top: 120px;
+        margin-bottom: 60px;
+    }
+    .imagebox img {
+        width: 55%;
+        height: 55%;
+    }
+    .aboutbox {
+        margin: 100px 50px;
+        padding: 10px;
+    }
+    .aboutbox h1 {
+        text-align: center;
+        margin-bottom: 40px;
+        font-weight: bold;
+    }
+}

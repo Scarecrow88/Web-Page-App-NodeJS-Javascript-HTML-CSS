@@ -1,0 +1,27 @@
+{
+  "name": "web-page-app-nodejs-javascript-html-css",
+  "version": "0.0.1",
+  "description": "Pagina web basica con paginacion",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node ./src/app.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "server",
+    "route",
+    "page",
+    "web"
+  ],
+  "author": "Scarecrow88",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "morgan": "^1.10.0"
+  }
+}

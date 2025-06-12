@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.errorcontentbox {
+    display: flex;
+    margin: 100px 350px;
+    padding: 20px;
+    border: 1px solid red;
+    border-radius: 20px;
+    font-family: sans-serif;
+}
+.erroriconbox {
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+.errorbodybox p {
+    padding-bottom: 25px;
+    font-size: 1.1rem;
+}
+.errortitle {
+    font-size: 1.6rem;
+}
+.errorbutton {
+    padding: 10px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+
+.errorbutton:hover {
+    color: black;
+    background-color: gray;
+}
+path {
+    fill: red !important;
+}
+@media screen and (max-width: 1080px) {
+    .errorcontentbox {
+        margin: 100px 200px;
+    }
+}
+@media screen and (max-width: 840px) {
+    .errorcontentbox {
+        margin: 100px 100px;
+    }
+}
+@media screen and (max-width: 840px) {
+    .errorcontentbox {
+        margin: 100px 50px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .errorcontentbox {
+        margin: 100px 20px;
+    }
+}
